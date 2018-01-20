@@ -1,0 +1,26 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<div class="text-center">
+  <div class="building">
+    <h3>Farm</h3>
+    <p>Earns 2-5 Gold</p>
+    <button (click)="farm()" class="btn-lg btn-warning">Farm!</button>
+  </div>
+
+  <div class="building">
+    <h3>Cave</h3>
+    <p>Earns 5-10 Gold</p>
+    <button (click)="explore()" class="btn-lg btn-danger">Explore!</button>
+  </div>
+
+  <div class="building">
+    <h3>Casino</h3>
+    <p>Earn up to or Lose up to 100 Gold</p>
+    <button (click)="gamble()" class="btn-lg btn-primary">Gamble!</button>
+  </div>
+
+  <div class="building">
+    <h3>Dojo</h3>
+    <p>Pay 500 gold to increase ninja skills</p>
+    <button (click)="train()" class="btn-lg btn-success" [disabled]="_dataService.Gold < 500 || _dataService.Lvl > 5">Level Up!</button>
+  </div>
+</div>

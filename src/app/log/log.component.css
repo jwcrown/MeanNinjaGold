@@ -1,0 +1,11 @@
+.log{
+    border: 2px solid black;
+    margin: 50px 600px;
+    height: auto;
+    padding: 10px;
+
+}
+
+li{
+    font-size: 12pt;
+}
